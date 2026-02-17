@@ -19,10 +19,10 @@ export default function Footer() {
         <div className="footer-box">
           <h3>Quick Links</h3>
           <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#menu">Menu</a></li>
-            <li><a href="#offers">Offers</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="/#home">Home</a></li>
+            <li><a href="/#menu">Menu</a></li>
+            <li><a href="/#offers">Offers</a></li>
+            <li><a href="/#contact">Contact</a></li>
           </ul>
         </div>
 
@@ -30,8 +30,8 @@ export default function Footer() {
         <div className="footer-box">
           <h3>Contact</h3>
           <p>Kanjuvayal, Kollam, Kerala</p>
-          <p>Email: </p>
-          <p>Phone: </p>
+          <p>Email: info@cocoz.com</p>
+          <p>Phone: +91 12345 67890</p>
         </div>
 
         {/* Newsletter */}
@@ -42,10 +42,10 @@ export default function Footer() {
             <button>Subscribe</button>
           </div>
           <div className="social-icons">
-            <a href="javascript:void(0)"><FaFacebookF /></a>
-            <a href="javascript:void(0)"><FaInstagram /></a>
-            <a href="javascript:void(0)"><FaTwitter /></a>
-            <a href="javascript:void(0)"><FaLinkedinIn /></a>
+            <a href="/#facebook"><FaFacebookF /></a>
+            <a href="/#instagram"><FaInstagram /></a>
+            <a href="/#twitter"><FaTwitter /></a>
+            <a href="/#linkedin"><FaLinkedinIn /></a>
           </div>
         </div>
       </div>

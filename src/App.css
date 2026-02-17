@@ -1,38 +1,108 @@
-.App {
-  text-align: center;
-}
+/* Import Stylish Google Font */
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap');
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Main Section with Background Image */
+.hero-section {
+  height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+
+  /* Layered background: gradient + image */
+  background:
+    linear-gradient(
+      135deg,
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 114, 255, 0.4)
+    ),
+    url("https://images.unsplash.com/photo-1492724441997-5dc865305da7")
+    no-repeat center center;
+
+  background-size: cover;
+  background-attachment: fixed;
+
+  /* Smooth fade-in animation */
+  animation: fadeInHero 1.5s ease-in-out;
 }
 
-.App-link {
-  color: #61dafb;
+/* Subtle zoom effect */
+.hero-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: inherit;
+  background-size: cover;
+  transform: scale(1.05);
+  z-index: -1;
 }
 
-@keyframes App-logo-spin {
+/* Animation */
+@keyframes fadeInHero {
   from {
-    transform: rotate(0deg);
+    opacity: 0;
   }
   to {
-    transform: rotate(360deg);
+    opacity: 1;
   }
+}
+
+/* Dark Overlay */
+.overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.65);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Card Styling */
+.hero-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 50px;
+  border-radius: 20px;
+  text-align: center;
+  color: #fff;
+  max-width: 600px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+}
+
+/* Heading */
+.hero-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 55px;
+  font-weight: 900;
+  letter-spacing: 6px;
+  margin-bottom: 20px;
+}
+
+/* Caption */
+.hero-caption {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+/* Button */
+.hero-btn {
+  padding: 12px 35px;
+  font-size: 16px;
+  font-weight: 700;
+  border: none;
+  border-radius: 30px;
+  background: #00d4ff;
+  color: #000;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.hero-btn:hover {
+  background: #ffffff;
+  transform: translateY(-3px);
 }

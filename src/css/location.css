@@ -5,7 +5,7 @@
   background: linear-gradient(-45deg, #00c6ff, #0072ff, #6a11cb, #2575fc);
   border-radius: 25px;
   margin: 20px auto;
-  max-width: 800px;
+  max-width: 700px;
   box-shadow: 0 15px 40px rgba(0,0,0,0.15);
   position: relative;
   overflow: hidden;
@@ -93,15 +93,7 @@
   opacity: 0.95;
 }
 
-/* Responsive Adjustments */
-@media (max-width: 1024px) {
-  .location-section iframe {
-    height: 220px;
-  }
-  .location-section .section-title {
-    font-size: 24px;
-  }
-}
+
 
 @media (max-width: 768px) {
   .location-section iframe {

@@ -19,16 +19,21 @@ export default function SlidingCard() {
     { name: "Tea", img: tea },
   ];
 
+  // Duplicate items for seamless scrolling
+  const duplicatedItems = [...foodItems, ...foodItems];
+
   return (
     <div className="slider-container">
       <h2 className="slider-title">Our Food Items</h2>
       <div className="food-slider">
-        {foodItems.map((item, index) => (
-          <div className="food-card" key={index}>
-            <img src={item.img} alt={item.name} />
-            <h3>{item.name}</h3>
-          </div>
-        ))}
+        <div className="scroll-track">
+          {duplicatedItems.map((item, index) => (
+            <div className="food-card" key={index}>
+              <img src={item.img} alt={item.name} />
+              <h3>{item.name}</h3>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );

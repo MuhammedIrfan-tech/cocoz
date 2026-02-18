@@ -6,6 +6,7 @@ export default function Footer() {
   return (
     <footer className="footer-section">
       <div className="footer-container">
+        
         {/* About */}
         <div className="footer-box">
           <h3>About Us</h3>
@@ -48,6 +49,7 @@ export default function Footer() {
             <a href="/#linkedin"><FaLinkedinIn /></a>
           </div>
         </div>
+
       </div>
 
       <div className="footer-bottom">

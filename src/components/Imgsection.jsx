@@ -7,7 +7,7 @@ export default function Imgsection() {
         <section className="hero-section">
       <div className="hero-container">
         
-        <div className="hero-left">
+        <div className="hero-left" data-aos="fade-right">
           <h1 className="hero-title">
             COCOZ
           </h1>
@@ -16,14 +16,12 @@ export default function Imgsection() {
             Stay Cool. Stay Fresh.
           </h2>
 
-         
-
-          <button className="hero-btn">
+          <button className="hero-btn" data-aos="zoom-in" data-aos-delay="300">
             More
           </button>
         </div>
 
-        <div className="hero-right">
+        <div className="hero-right" data-aos="fade-left" data-aos-delay="200">
           <img src={cocoz} alt="COCOZ Drink" />
         </div>
 

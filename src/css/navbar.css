@@ -71,7 +71,7 @@
   width: 100%;
 }
 
-
+/* Active Link */
 .nav-link.active {
   color: #00d4ff !important;
 }
